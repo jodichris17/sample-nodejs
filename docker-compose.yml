@@ -1,0 +1,18 @@
+version: "3"
+ 
+services:
+  web:
+    image: sample-nodejs:latest
+    ports:
+      - "80:80"
+    environment:
+      PROCESS: web
+      PORT: 80
+  cron:
+    image: sample-nodejs:latest
+    environment:
+      PROCESS: cron
+  consumer:
+    image: sample-nodejs:latest
+    environment:
+      PROCESS: consumer

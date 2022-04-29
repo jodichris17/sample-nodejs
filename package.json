@@ -1,0 +1,17 @@
+{
+    "name": "nodejs-sample",
+    "version": "0.0.1",
+    "description": "Sample Project for NodeJS",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "jcj",
+    "license": "ISC",
+    "dependencies": {
+      "delay": "^4.3.0",
+      "express": "^4.17.1"
+    }
+  }
+  
