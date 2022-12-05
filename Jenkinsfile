@@ -16,8 +16,10 @@ pipeline {
         stage("test") {
         
             steps {
-                sshpass -p 'password' ssh jcj@127.0.0.1 \
-                ls /home/jcj/test
+                sh """ \
+                    sshpass -p 'password' ssh jcj@127.0.0.1 \
+                    ls /home/jcj/test
+                """
             }
         }
         
