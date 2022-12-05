@@ -7,7 +7,9 @@ pipeline {
         stage("build") {
         
             steps {
-                echo 'building the application...'
+                sh """ \
+                    sshpass -p 'password' scp *.* jcj@127.0.0.1:/home/jcj/test
+                """
             }
         }
         
