@@ -16,7 +16,8 @@ pipeline {
         stage("test") {
         
             steps {
-                echo 'testing the application...'
+                sshpass -p 'password' ssh jcj@127.0.0.1 \
+                ls /home/jcj/test
             }
         }
         
