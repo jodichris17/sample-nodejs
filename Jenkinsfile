@@ -4,7 +4,7 @@ pipeline {
     
     stages {
     
-        stage("build") {
+        stage("upload") {
         
             steps {
                 sh """ \
@@ -13,7 +13,7 @@ pipeline {
             }
         }
         
-        stage("test") {
+        stage("list") {
         
             steps {
                 sh """ \
@@ -23,11 +23,5 @@ pipeline {
             }
         }
         
-        stage("deploy") {
-        
-            steps {
-                echo 'deplying the application...'
-            }
-        }
     }   
 }
