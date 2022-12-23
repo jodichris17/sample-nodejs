@@ -1,11 +1,8 @@
-#build image with tag sample-nodejs
+# Sample Node.js
+This is a simple node js application containerized with docker
 
-docker build -t sample-nodejs .
+## How to Run
 
-#run docker-compose
-
-docker-compose up -d
-
-#test docker app
-
-curl localhost
+1. Build image with tag sample-nodejs: `docker build -t sample-nodejs .`
+2. Run docker-compose: `docker-compose up -d`
+3. Test application: `curl localhost`
